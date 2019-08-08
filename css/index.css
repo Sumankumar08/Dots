@@ -1,0 +1,202 @@
+body {
+  background-image: url("../images/dark1.jpg");
+  height: 100%;
+  width: 100%; }
+
+header {
+  border-bottom-style: outset; }
+  header p {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: cursive;
+    color: lightgray;
+    text-shadow: 2px 2px 2px black; }
+  header nav {
+    margin-right: 160px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px black; }
+    header nav a {
+      text-decoration: none;
+      padding: 60px; }
+    header nav a:link {
+      color: lightgray; }
+    header nav a:hover {
+      color: red; }
+    header nav a:visited {
+      color: gold; }
+
+#wrapper {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row nowrap; }
+  #wrapper #dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-right: 30px; }
+    #wrapper #dots #row1, #wrapper #dots #row2, #wrapper #dots #row3, #wrapper #dots #row4, #wrapper #dots #row5, #wrapper #dots #row6 {
+      display: flex;
+      flex-flow: row; }
+      #wrapper #dots #row1 .dot, #wrapper #dots #row2 .dot, #wrapper #dots #row3 .dot, #wrapper #dots #row4 .dot, #wrapper #dots #row5 .dot, #wrapper #dots #row6 .dot {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 10px;
+        width: 10px;
+        border-style: outset; }
+      #wrapper #dots #row1 .space.hor, #wrapper #dots #row2 .space.hor, #wrapper #dots #row3 .space.hor, #wrapper #dots #row4 .space.hor, #wrapper #dots #row5 .space.hor, #wrapper #dots #row6 .space.hor {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 16px;
+        width: 60px; }
+      #wrapper #dots #row1 .click, #wrapper #dots #row2 .click, #wrapper #dots #row3 .click, #wrapper #dots #row4 .click, #wrapper #dots #row5 .click, #wrapper #dots #row6 .click {
+        color: gold; }
+    #wrapper #dots .erow {
+      display: flex;
+      flex-flow: row;
+      width: 396px; }
+      #wrapper #dots .erow .empty {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        height: 60px;
+        width: 60px;
+        font-size: 1.5em; }
+      #wrapper #dots .erow .space.ver {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 60px;
+        width: 16px; }
+  #wrapper #scores {
+    margin-top: 120px;
+    margin-left: 40px; }
+    #wrapper #scores p {
+      font-size: 1.5em;
+      color: gold;
+      font-family: cursive;
+      text-shadow: 2px 2px 2px black; }
+    #wrapper #scores #player1 {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 140px;
+      font-size: 1.5em;
+      border-style: inset;
+      background-color: darkgrey; }
+    #wrapper #scores #player2 {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 140px;
+      font-size: 1.5em;
+      border-style: inset;
+      background-color: darkgrey; }
+
+main h1 {
+  color: red;
+  text-align: center;
+  font-family: cursive; }
+main #info {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: cursive;
+  color: lightgray; }
+main h2 {
+  font-family: cursive;
+  font-size: 1.5em;
+  color: lightgray;
+  text-align: center; }
+main label {
+  font-family: cursive;
+  font-size: 1em;
+  color: white;
+  display: block;
+  text-align: center; }
+main input, main textarea {
+  margin: auto;
+  display: block;
+  font-size: 1.5em; }
+main #button {
+  text-align: center; }
+  main #button #mySubmit {
+    font-size: 1em;
+    font-family: cursive;
+    background-color: green;
+    border: none;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; }
+
+footer p {
+  font-size: 1em;
+  color: lightgray;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+  font-family: cursive;
+  text-shadow: 2px 2px 2px black; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: grey;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  font-size: 2em;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  padding: 20px;
+  border: 1px solid red;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */
+
